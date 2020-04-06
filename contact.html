@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contacts - Studio Pryeto Only Arts</title>
+	
+	
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<body>
+		<header>
+			<div class="box">
+				<h1><img src="logo.png"></h1>
+				<nav>
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="contact.html"	>Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<main>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" class="default-input" required	>
+			
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" class="default-input" required placeholder="my_favorite_email@mail.com">
+				
+				<label for="phone">Phone number:</label>
+				<input type="tel" id="phone" class="default-input" required placeholder="+XX(XX)X-XXXX-XXXX">
+				
+				<label for="message">Message:</label>
+				<textarea cols="70" rows="10" id="message" class="default-input" required></textarea>	
+				
+				<fieldset>
+					<legend>How do you prefer our contact?</legend>
+					<label for="email-radio"><input type="radio" name="contato" value="email" id="email-radio" checked>E-mail:</label>
+					
+					<label for="phone-radio"><input type="radio" name="contato" value="phone" id="phone-radio">Phone:</label>
+					
+					<label for="whatsapp-radio"><input type="radio" name="contato" value="whatsapp" id="whatsapp-radio">WhatsApp:</label>
+				</fieldset>
+				
+				<fieldset>
+					<legend>What is the best time for you?</legend>
+					<select>
+						<option>Morning</option>
+						<option>Afternoon</option>
+						<option>Night</option>
+					</select>
+				</fieldset>
+				<label><input type="checkbox" class="check-news" required> Would you like to receive our newsletter?</label>
+				
+				<input type="submit" class="send" value="Send form">
+			</form>
+			
+			<table>
+				<thead>
+					<tr>
+						<th>Day</th>
+						<th>Work schedule</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>Monday</td>
+						<td>08:00 to 20:00</td>
+					</tr>
+					<tr>
+						<td>Wednesday</td>
+						<td>08:00 to 20:00</td>
+					</tr>
+					<tr>
+						<td>Friday</td>
+						<td>08:00 to 20:00</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+		
+				<footer>
+			<img src="footer.png">
+			<p class="copyright">&copy; Copyright Studio Pryeto only arts - 2020</p>
+		</footer>
+	</body>
+</html>
+

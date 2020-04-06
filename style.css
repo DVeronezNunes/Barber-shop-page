@@ -1,53 +1,154 @@
-body{
-	
-}
-
-#banner {
-	width: 100%;
-	
-}
-
-.principal {
+header {
+	padding: 20px 0;
 	background: #CCCCCC;
-	padding: 30px;
 }
 
-.title-principal{
-	padding-left: 20px;
+.box {
+	position:relative;
+	width: 940px;
+	margin: 0 auto;
 }
 
-.title-centralized {
-	text-align:center
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0px;
+}
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
 }
 
-p {
-	text-align:center
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
 }
 
-#mission {
-	font-size: 20px	
+nav a:hover{
+	font-size:30px;
+	color: #123456;
+	border-bottom: 2px dotted #654321;
+	padding: 10px;
 }
 
-em strong {
-	color: red;
-}
-			
-.items {
-	font-style: italic;
+.products{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
 }
 
-.benefits {
-	background : #FFFFFF;
-	padding: 20px;
-}
-
-ul {
-	display: inline-block;
+.products li{
+	display:inline-block;
+	text-align: center;
+	width: 30%;
 	vertical-align: top;
-	width: 20%; 
-	margin-right: 15%;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
 }
 
-.imagebenefits {
+.products li:hover{
+	border-color: #654321;
+	border-style: dotted;
+}
+
+.products li:hover h2{
+	font-size: 35px;
+}
+
+.products li:active{
+	border-color: #112233;
+	border-style: double;
+	border-width: 4px;
+}
+
+.products h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.product-description{
+	font-size:18px;
+}
+
+.price{
+	font-size:22px;
+	font-weight: bold;
+	vertical-align: bottom;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	padding: 40px 0;
+	background: url(bg.jpg);
+}
+
+.copyright{
+	color: #FFFFFF;
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+form{
+	margin: 40px 0;
+}
+	
+form label, form legend{
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.default-input{
+	display: block;
+	margin: 0 0 20px;
+	padding:10px 25px;
+	width: 50%;
+}
+
+.check-news{
+	margin: 20px 0;
+}
+
+.send{
 	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border:none;
+	border-radius: 5px;
+	transition: 2s all;
+}
+
+.send:hover{
+	background:darkorange;
+	transform:scale(1.2);
+}
+
+table{
+	margin: 20px 0 40px;
+}
+
+thead{
+	background: grey;
+	color:white;
+	font-weight: bold;
+}
+
+td, th{
+	border: 1px solid black;
+	padding: 8px 15px;
 }
